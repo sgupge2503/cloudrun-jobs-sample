@@ -1,0 +1,12 @@
+{
+    "name": "cloudrun-jobs-sample",
+    "version": "1.0.0",
+    "description": "Node.js sample for Cloud Run jobs",
+    "main": "main.js",
+    "scripts": {
+        "start": "node main.js"
+    },
+    "engines": {
+        "node": ">=16.0.0"
+    }
+}
