@@ -2,6 +2,10 @@ substitutions:
   _IMAGE: 'cloudrun-jobs-sample'
   _JOB_NAME: 'cloudrun-jobs-sample'
   _REGION: 'asia-northeast1'
+
+options:
+  logging: CLOUD_LOGGING_ONLY
+
 steps:
 # Build the container image
 - name: 'gcr.io/cloud-builders/docker'
