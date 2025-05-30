@@ -1,7 +1,7 @@
 substitutions:
   _IMAGE: 'cloudrun-jobs-sample'
   _JOB_NAME: 'cloudrun-jobs-sample'
-  _REGION: 'asia-northeast1'
+  _REGION: 'us-central1'  # または 'asia-northeast2', 'asia-southeast1' など
 
 options:
   logging: CLOUD_LOGGING_ONLY
