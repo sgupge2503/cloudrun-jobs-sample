@@ -1,7 +1,7 @@
 substitutions:
   _IMAGE: 'cloudrun-jobs-sample'
   _JOB_NAME: 'cloudrun-jobs-sample'
-  _REGION: 'us-central1'  # または 'asia-northeast2', 'asia-southeast1' など
+  _REGION: 'us-central1'
 
 options:
   logging: CLOUD_LOGGING_ONLY
@@ -23,6 +23,8 @@ steps:
   - '$_JOB_NAME'
   - '--image'
   - 'gcr.io/$PROJECT_ID/$_IMAGE'
+  - '--tasks'
+  - '20'
   - '--region'
   - '$_REGION'
   - '--execute-now'
